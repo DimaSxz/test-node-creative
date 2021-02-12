@@ -1,0 +1,31 @@
+{
+  "name": "test-node-creative",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "repository": "https://github.com/DimaSxz/test-node-creative.git",
+  "author": "Dmitry Petrov <DimaS300i@yandex.ru>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "babel src/index.js -d dist",
+    "start": "yarn build && node dist/index.js",
+    "dev": "nodemon yarn build"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.0.0",
+    "mysql": "^2.18.1",
+    "typeorm": "^0.2.31"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/node": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "nodemon": "^2.0.7"
+  }
+}
